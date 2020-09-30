@@ -7,7 +7,7 @@ using namespace std;
 
 // parameter m - meters, should be positive.
 // return - feet
-double meters_to_feet(double m)
+double sum(double m)
 {
     assert(m >= 0);
 
@@ -43,7 +43,7 @@ int main()
     cout << setw(WIDTH) << HEADER2 << endl;
 
     for (int m = START; m <= END; m += STEP) {
-        double f = meters_to_feet(m);
+        double f = sum(m);
         cout << setw(WIDTH) << m << ' ';
         cout << setw(WIDTH) << f << endl;
     }
